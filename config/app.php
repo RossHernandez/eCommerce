@@ -167,7 +167,10 @@ return [
         /*
          * Package Service Providers...
          */
+        //Se agrego esta linea para laravel collective que hace formularios
         Collective\Html\HtmlServiceProvider::class,
+        //Para tener una variable global para todas las vistas
+        App\Providers\ShoppingCartProvider::class,
 
         /*
          * Application Service Providers...

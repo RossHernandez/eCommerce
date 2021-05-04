@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ShoppingCart;
 
 class MainController extends Controller
 {
     public function home()
     {
-        return view('main.home', []);   
+        
+
+        //Retornamos la variable $shopping_cart a la vista main.home
+        return view('main.home');   
     }
 
     public function index()
